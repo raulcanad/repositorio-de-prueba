@@ -1,0 +1,21 @@
+.button {
+    display: flex;
+    list-style: none;
+    position: relative;
+    align-items: center;
+    padding: 0 5px ;
+}
+
+.button a{
+    text-decoration: none;
+    color:black;
+}
+
+.button a::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}

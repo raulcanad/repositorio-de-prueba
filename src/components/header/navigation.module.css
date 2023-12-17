@@ -1,0 +1,14 @@
+.menu{
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.menu ul{
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
