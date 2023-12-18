@@ -10,7 +10,8 @@ export const Header = () => {
         <header className={Styles.header}>
         <div className={Styles.logo}>
         <LogoHorizontal contain />
-        </div> 
+        </div>
+       
         <NavigationHeader />
         </header>
         </>
