@@ -1,3 +1,7 @@
+.containerAll{
+    display: flex;
+   
+}
 .menu{
     position: relative;
     display: flex;
@@ -5,24 +9,35 @@
     justify-content: flex-end;
 }
 .novisible {
+    margin-top: 10%;
     position: relative;
     display: flex;
-    flex-grow: 1;
     justify-content: flex-end;
 
  }  
+ .burger{
+    opacity: 0;
+    display:none;
+}
 
 
 
-@media screen and (max-width: 700px) {
-  /*  .menu{
-        display: none;
-    }*/
+@media screen and (max-width: 500px) {
+    .burger{
+        opacity: 1;
+        display:flex;
+        flex-direction: row-reverse;
+        background-color: Black;
+    }
+    .containerAll{
+        display:flex;
+        flex-direction: column;
+    }
     .menu{
         visibility: visible;
         /*opacity: 0;
         visibility: hidden;*/
-        position: fixed;
+        position: relative;
         justify-content: flex-start;
         opacity: 1;
         display: flex;
@@ -53,9 +68,8 @@
         padding:2rem;
         box-shadow: 0 0 0 100vmax(0, 0, 0, 0.5);
       
-    }  
+    } 
 
-
-   
+    
     
 }

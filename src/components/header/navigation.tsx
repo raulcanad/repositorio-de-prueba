@@ -13,8 +13,8 @@ export const NavigationHeader = () => {
    
    
     return(
-        <div className='Hola'>
-            
+        <div className='containerAll'>
+            <div className={Styles.burger}>
             <Hamburger color="#4FD1C5"  onToggle={toggled => {
                     if (toggled) {
                         setOpen(true);
@@ -24,11 +24,12 @@ export const NavigationHeader = () => {
                         // close a menu
                     }
             } }/>
+            </div>
            
 
         <nav className={isOpen? Styles.menu : Styles.novisible}>
 
-        
+       
                 
                     <HeaderButton href='/'>INICIO</HeaderButton>
                     <HeaderButton href='/casino'>CASINO</HeaderButton>
@@ -36,7 +37,7 @@ export const NavigationHeader = () => {
 
                 
             </nav>
-        </div>
+            </div>
     )
     
 
